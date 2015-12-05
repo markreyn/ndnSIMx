@@ -1,0 +1,342 @@
+# project template (0.1) configured on Fri Nov 20 19:15:44 2015 by
+# waf 1.8.5 (abi 98, python 20706f0 on linux2)
+# using ./waf configure
+#
+----------------------------------------
+Setting top to
+/terra/ndnSIM/scenario
+----------------------------------------
+Setting out to
+/terra/ndnSIM/scenario/build
+----------------------------------------
+Checking for 'gcc' (C compiler)
+find program=['gcc', 'cc'] paths=['/usr/local/texlive/2014/bin/i386-linux', '/extra/markreyn/.rvm/gems/ruby-2.1.0/bin', '/extra/markreyn/.rvm/gems/ruby-2.1.0@global/bin', '/extra/markreyn/.rvm/rubies/ruby-2.1.0/bin', '/sbin', '/extra/markreyn/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/usr/bin', '/extra/markreyn/.rvm/bin', '/extra/markreyn/CodeSourcery/Sourcery_G++_Lite/bin', '/extra/markreyn/CodeSourcery/Sourcery_CodeBench_for_ARM_GNU_Linux/bin', '/usr/sbin', '/extra/markreyn/android-sdk-linux/build-tools/19.1.0', '/extra/markreyn/android-sdk-linux/tools', '/extra/markreyn/android-sdk-linux/platform-tools', '/extra2/local/bin', '/extra/markreyn/.rvm/bin'] var='CC' -> ['/usr/bin/gcc']
+find program=['ar'] paths=['/usr/local/texlive/2014/bin/i386-linux', '/extra/markreyn/.rvm/gems/ruby-2.1.0/bin', '/extra/markreyn/.rvm/gems/ruby-2.1.0@global/bin', '/extra/markreyn/.rvm/rubies/ruby-2.1.0/bin', '/sbin', '/extra/markreyn/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/usr/bin', '/extra/markreyn/.rvm/bin', '/extra/markreyn/CodeSourcery/Sourcery_G++_Lite/bin', '/extra/markreyn/CodeSourcery/Sourcery_CodeBench_for_ARM_GNU_Linux/bin', '/usr/sbin', '/extra/markreyn/android-sdk-linux/build-tools/19.1.0', '/extra/markreyn/android-sdk-linux/tools', '/extra/markreyn/android-sdk-linux/platform-tools', '/extra2/local/bin', '/extra/markreyn/.rvm/bin'] var='AR' -> ['/usr/bin/ar']
+/usr/bin/gcc
+----------------------------------------
+Checking for 'g++' (C++ compiler)
+find program=['g++', 'c++'] paths=['/usr/local/texlive/2014/bin/i386-linux', '/extra/markreyn/.rvm/gems/ruby-2.1.0/bin', '/extra/markreyn/.rvm/gems/ruby-2.1.0@global/bin', '/extra/markreyn/.rvm/rubies/ruby-2.1.0/bin', '/sbin', '/extra/markreyn/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/usr/bin', '/extra/markreyn/.rvm/bin', '/extra/markreyn/CodeSourcery/Sourcery_G++_Lite/bin', '/extra/markreyn/CodeSourcery/Sourcery_CodeBench_for_ARM_GNU_Linux/bin', '/usr/sbin', '/extra/markreyn/android-sdk-linux/build-tools/19.1.0', '/extra/markreyn/android-sdk-linux/tools', '/extra/markreyn/android-sdk-linux/platform-tools', '/extra2/local/bin', '/extra/markreyn/.rvm/bin'] var='CXX' -> ['/usr/bin/g++']
+(tool ar is already loaded, skipping)
+/usr/bin/g++
+----------------------------------------
+Checking supported CXXFLAGS
+==>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] Compiling [32mbuild/.conf_check_095eb83fdf9d739da4aaa46cf57d81d5/test.cpp[0m
+
+['/usr/bin/g++', '-Werror', '-std=c++11', '../test.cpp', '-c', '-o', '/terra/ndnSIM/scenario/build/.conf_check_095eb83fdf9d739da4aaa46cf57d81d5/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_095eb83fdf9d739da4aaa46cf57d81d5/testbuild/testprog[0m
+
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/terra/ndnSIM/scenario/build/.conf_check_095eb83fdf9d739da4aaa46cf57d81d5/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+-std=c++11
+----------------------------------------
+Checking supported CXXFLAGS
+==>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] Compiling [32mbuild/.conf_check_e7e526094320eb3742d7cc258ab71f5b/test.cpp[0m
+
+['/usr/bin/g++', '-std=c++11', '-Werror', '-Wall', '../test.cpp', '-c', '-o', '/terra/ndnSIM/scenario/build/.conf_check_e7e526094320eb3742d7cc258ab71f5b/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_e7e526094320eb3742d7cc258ab71f5b/testbuild/testprog[0m
+
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/terra/ndnSIM/scenario/build/.conf_check_e7e526094320eb3742d7cc258ab71f5b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+==>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] Compiling [32mbuild/.conf_check_618d1d8ee55633e5fc90d8dffd5af30a/test.cpp[0m
+
+['/usr/bin/g++', '-std=c++11', '-Werror', '-O2', '../test.cpp', '-c', '-o', '/terra/ndnSIM/scenario/build/.conf_check_618d1d8ee55633e5fc90d8dffd5af30a/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_618d1d8ee55633e5fc90d8dffd5af30a/testbuild/testprog[0m
+
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/terra/ndnSIM/scenario/build/.conf_check_618d1d8ee55633e5fc90d8dffd5af30a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+==>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] Compiling [32mbuild/.conf_check_9781322901e2ede5b8b9d32f3eb7edb7/test.cpp[0m
+
+['/usr/bin/g++', '-std=c++11', '-Werror', '-g', '../test.cpp', '-c', '-o', '/terra/ndnSIM/scenario/build/.conf_check_9781322901e2ede5b8b9d32f3eb7edb7/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_9781322901e2ede5b8b9d32f3eb7edb7/testbuild/testprog[0m
+
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/terra/ndnSIM/scenario/build/.conf_check_9781322901e2ede5b8b9d32f3eb7edb7/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+-Wall -O2 -g
+----------------------------------------
+Checking for program 'pkg-config'
+/usr/bin/pkg-config
+find program=['pkg-config'] paths=['/usr/local/texlive/2014/bin/i386-linux', '/extra/markreyn/.rvm/gems/ruby-2.1.0/bin', '/extra/markreyn/.rvm/gems/ruby-2.1.0@global/bin', '/extra/markreyn/.rvm/rubies/ruby-2.1.0/bin', '/sbin', '/extra/markreyn/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/usr/bin', '/extra/markreyn/.rvm/bin', '/extra/markreyn/CodeSourcery/Sourcery_G++_Lite/bin', '/extra/markreyn/CodeSourcery/Sourcery_CodeBench_for_ARM_GNU_Linux/bin', '/usr/sbin', '/extra/markreyn/android-sdk-linux/build-tools/19.1.0', '/extra/markreyn/android-sdk-linux/tools', '/extra/markreyn/android-sdk-linux/platform-tools', '/extra2/local/bin', '/extra/markreyn/.rvm/bin'] var='PKGCONFIG' -> ['/usr/bin/pkg-config']
+------------------------------------------
+Checking for pkg-config version >= '0.0.0'
+['/usr/bin/pkg-config', '--atleast-pkgconfig-version=0.0.0']
+yes
+------------------------------------------
+Checking for ns3-core
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-core-optimized']
+out: -pthread -DHAVE_GSL=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-network
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-network-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-point-to-point
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-point-to-point-optimized']
+out: -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-point-to-point-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-applications
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-applications-optimized']
+out: -pthread -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -DHAVE_SQLITE3=1 -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GSL=1 -I/usr/local/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2 -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-applications-optimized -lns3-dev-internet-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-mobility
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-mobility-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-ndnSIM
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-ndnSIM-optimized']
+out: -DHAVE_SQLITE3=1 -pthread -DHAVE_GSL=1 -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -I/usr/local/include/ns3-dev -I/terra/ndnSIM/ns-3/build/ns3/ndnSIM/NFD -I/terra/ndnSIM/ns-3/ns3/ndnSIM/NFD -I/terra/ndnSIM/ns-3/build/src/ndnSIM/NFD/core -I/terra/ndnSIM/ns-3/src/ndnSIM/NFD/core -I/terra/ndnSIM/ns-3/build/src/ndnSIM/NFD/daemon -I/terra/ndnSIM/ns-3/src/ndnSIM/NFD/daemon -I/terra/ndnSIM/ns-3/build/src/ndnSIM/NFD/rib -I/terra/ndnSIM/ns-3/src/ndnSIM/NFD/rib -I/terra/ndnSIM/ns-3/build/ns3/ndnSIM -I/terra/ndnSIM/ns-3/ns3/ndnSIM -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-ndnSIM-optimized -lboost_graph -lboost_thread -lboost_unit_test_framework -lboost_random -lboost_date_time -lboost_iostreams -lboost_regex -lboost_program_options -lboost_chrono -lboost_system -lboost_signals -lboost_filesystem -lcryptopp -lns3-dev-topology-read-optimized -lns3-dev-visualizer-optimized -lns3-dev-point-to-point-layout-optimized -lns3-dev-csma-optimized -lns3-dev-wifi-optimized -lns3-dev-point-to-point-optimized -lns3-dev-applications-optimized -lns3-dev-propagation-optimized -lns3-dev-energy-optimized -lns3-dev-internet-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-antenna
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-antenna-optimized']
+out: -pthread -DHAVE_GSL=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-antenna-optimized -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-aodv
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-aodv-optimized']
+out: -DHAVE_GSL=1 -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_SQLITE3=1 -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-aodv-optimized -lns3-dev-wifi-optimized -lns3-dev-applications-optimized -lns3-dev-propagation-optimized -lns3-dev-energy-optimized -lns3-dev-internet-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-bridge
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-bridge-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-bridge-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-brite
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-brite-optimized']
+err: Package libns3-dev-brite-optimized was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libns3-dev-brite-optimized.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libns3-dev-brite-optimized' found
+
+not found
+from /terra/ndnSIM/scenario: The configuration failed
+------------------------------------------
+Checking for ns3-buildings
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-buildings-optimized']
+out: -pthread -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-buildings-optimized -lns3-dev-propagation-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-click
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-click-optimized']
+err: Package libns3-dev-click-optimized was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libns3-dev-click-optimized.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libns3-dev-click-optimized' found
+
+not found
+from /terra/ndnSIM/scenario: The configuration failed
+------------------------------------------
+Checking for ns3-config-store
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-config-store-optimized']
+out: -pthread -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-csma
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-csma-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-csma-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-csma-layout
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-csma-layout-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-csma-layout-optimized -lns3-dev-csma-optimized -lns3-dev-internet-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-dsdv
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-dsdv-optimized']
+out: -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-dsdv-optimized -lns3-dev-internet-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-dsr
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-dsr-optimized']
+out: -DHAVE_GSL=1 -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_SQLITE3=1 -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-dsr-optimized -lns3-dev-wifi-optimized -lns3-dev-applications-optimized -lns3-dev-propagation-optimized -lns3-dev-energy-optimized -lns3-dev-internet-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-emu
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-emu-optimized']
+err: Package libns3-dev-emu-optimized was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libns3-dev-emu-optimized.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libns3-dev-emu-optimized' found
+
+not found
+from /terra/ndnSIM/scenario: The configuration failed
+------------------------------------------
+Checking for ns3-energy
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-energy-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-energy-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-fd-net-device
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-fd-net-device-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-fd-net-device-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-flow-monitor
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-flow-monitor-optimized']
+out: -pthread -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2 -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-flow-monitor-optimized -lns3-dev-internet-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-internet
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-internet-optimized']
+out: -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-internet-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-lte
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-lte-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -I/usr/local/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2 -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-lte-optimized -lns3-dev-spectrum-optimized -lns3-dev-buildings-optimized -lns3-dev-virtual-net-device-optimized -lns3-dev-point-to-point-optimized -lns3-dev-applications-optimized -lns3-dev-csma-optimized -lns3-dev-fd-net-device-optimized -lns3-dev-antenna-optimized -lns3-dev-propagation-optimized -lns3-dev-mobility-optimized -lns3-dev-internet-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-mesh
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-mesh-optimized']
+out: -DHAVE_GSL=1 -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_SQLITE3=1 -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-mesh-optimized -lns3-dev-wifi-optimized -lns3-dev-applications-optimized -lns3-dev-propagation-optimized -lns3-dev-energy-optimized -lns3-dev-internet-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-mpi
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-mpi-optimized']
+out: -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-netanim
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-netanim-optimized']
+out: -DHAVE_GSL=1 -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_SQLITE3=1 -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-netanim-optimized -lns3-dev-wimax-optimized -lns3-dev-wifi-optimized -lns3-dev-lte-optimized -lns3-dev-uan-optimized -lns3-dev-spectrum-optimized -lns3-dev-buildings-optimized -lns3-dev-virtual-net-device-optimized -lns3-dev-point-to-point-optimized -lns3-dev-applications-optimized -lns3-dev-csma-optimized -lns3-dev-fd-net-device-optimized -lns3-dev-antenna-optimized -lns3-dev-propagation-optimized -lns3-dev-internet-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-energy-optimized -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-nix-vector-routing
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-nix-vector-routing-optimized']
+out: -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-nix-vector-routing-optimized -lns3-dev-internet-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-olsr
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-olsr-optimized']
+out: -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-olsr-optimized -lns3-dev-internet-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-openflow
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-openflow-optimized']
+out: -DNS3_OPENFLOW -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/local/include -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr/local/build/default -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-openflow-optimized -lopenflow -lxml2 -lns3-dev-internet-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-point-to-point-layout
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-point-to-point-layout-optimized']
+out: -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-point-to-point-layout-optimized -lns3-dev-internet-optimized -lns3-dev-point-to-point-optimized -lns3-dev-mobility-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-propagation
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-propagation-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-propagation-optimized -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-spectrum
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-spectrum-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-spectrum-optimized -lns3-dev-propagation-optimized -lns3-dev-antenna-optimized -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-stats
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-stats-optimized']
+out: -DHAVE_SQLITE3=1 -pthread -DHAVE_GSL=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-tap-bridge
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-tap-bridge-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-tap-bridge-optimized -lns3-dev-internet-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-topology-read
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-topology-read-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-topology-read-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-uan
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-uan-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-uan-optimized -lns3-dev-energy-optimized -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-virtual-net-device
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-virtual-net-device-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-virtual-net-device-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-visualizer
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-visualizer-optimized']
+out: -DHAVE_GSL=1 -pthread -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_SQLITE3=1 -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-visualizer-optimized -lns3-dev-wifi-optimized -lns3-dev-point-to-point-optimized -lns3-dev-applications-optimized -lns3-dev-propagation-optimized -lns3-dev-energy-optimized -lns3-dev-internet-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-bridge-optimized -lns3-dev-mobility-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-wifi
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-wifi-optimized']
+out: -DHAVE_GSL=1 -pthread -DHAVE_SQLITE3=1 -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -DHAVE_GTK2=1 -DHAVE_LIBXML2=1 -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/harfbuzz -I/usr/include/libxml2  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-wifi-optimized -lns3-dev-applications-optimized -lns3-dev-propagation-optimized -lns3-dev-energy-optimized -lns3-dev-internet-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfontconfig -lgobject-2.0 -lglib-2.0 -lfreetype -lxml2 -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-wimax
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-wimax-optimized']
+out: -pthread -DHAVE_GSL=1 -DHAVE_SQLITE3=1 -DHAVE_MPI=1 -DNS3_OPENMPI -DNS3_MPI -I/usr/local/include/ns3-dev -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi  -Wl,-Bdynamic -pthread -Wl,-rpath,/usr/lib/openmpi/lib -L/usr/local/lib -L/usr//lib -L/usr/lib/openmpi/lib -lns3-dev-wimax-optimized -lns3-dev-internet-optimized -lns3-dev-propagation-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lmpi_cxx -lmpi -ldl -lhwloc -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-core-optimized -lrt -lpthread -lgsl -lgslcblas -lm  
+
+yes

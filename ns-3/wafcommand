@@ -1,0 +1,1 @@
+./waf configure --enable-examples --enable-tests --with-openflow=/usr/local --enable-mpi
