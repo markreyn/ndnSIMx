@@ -56,6 +56,7 @@ const Name
   n.clear();
   iteration = 1;
   T = 1;
+  std::cout << "Strategy constructor\n" << std::flush;
 }
 
 TaispStrategy::~TaispStrategy()
@@ -92,8 +93,8 @@ static bool checklimitf(vector<float>& v, int idx)
 }
 */
 
-#define checklimiti(V, nn) ( (0 <= nn) && (nn < V.size()) )
-#define checklimitf(V, nn) ( (0 <= nn) && (nn < V.size()) )
+#define checklimiti(V, nn) ( (0 <= nn) && (nn < (int)(V.size())) )
+#define checklimitf(V, nn) ( (0 <= nn) && (nn < (int)(V.size())) )
 
 void
 TaispStrategy::afterReceiveInterest(const Face& inFace,
@@ -103,6 +104,7 @@ TaispStrategy::afterReceiveInterest(const Face& inFace,
 {
 //  NFD_LOG_TRACE("afterReceiveInterest");
 
+  std::cout << "callback\n" << std::flush;
   if (pitEntry->hasUnexpiredOutRecords()) {
     // not a new Interest, don't forward
     return;
@@ -122,10 +124,11 @@ TaispStrategy::afterReceiveInterest(const Face& inFace,
   std::vector<float> tempr;
   tempr.clear();
   int ntotal = 4;  // total number of flows
+  std::cout << "callback1\n" << std::flush;
   do {
     uint64_t currentIndex = 0;
     int counterz = 0;
-
+    std::cout << "callbacktop\n" << std::flush;
     for (selected = nexthops.begin();
          selected != nexthops.end() && currentIndex != selectedIndex;
          ++selected, ++currentIndex) {
@@ -173,6 +176,7 @@ TaispStrategy::afterReceiveInterest(const Face& inFace,
           }
         }
     }
+    std::cout << "callback2\n" << std::flush;
     float limt = -1.0;
     for(int k=0;k<(int)(s.size());k++)
       {
@@ -182,23 +186,34 @@ TaispStrategy::afterReceiveInterest(const Face& inFace,
             selectedIndex = k;
           }
       }
+    std::cout << "callback3\n" << std::flush;
     b = (unsigned int)(floorf(limt));
     if ( b < 1 )
       b = 1;
     if ( (int)selectedIndex > nh )
       selectedIndex = 0;
 // find the correct choice based on the index
+    std::cout << "callback4\n" << std::flush;
+
     for (selected = nexthops.begin();
          selected != nexthops.end() && currentIndex != selectedIndex;
          ++selected, ++currentIndex) {
     //selected = nexthops[selectedIndex];
     }
+    std::cout << "callback4a\n" << std::flush;
     iteration++;
     pr = r;
     r = tempr;
+    std::cout << "callback4b\n" << std::flush;
+    if ( selected == nexthops.end() )
+      selected = nexthops.begin();
+    std::cout << "callback4c\n" << std::flush;
   } while (!canForwardToNextHop(pitEntry, *selected));
+  std::cout << "callback5\n" << std::flush;
 
   this->sendInterest(pitEntry, selected->getFace());
+  std::cout << "callback6\n" << std::flush;
+
 }
 
 } // namespace fw

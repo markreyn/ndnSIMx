@@ -1,1 +1,1 @@
- vi ./src/ndnSIM/examples/topologies/topology-taisp.txt ./src/ndnSIM/examples/ndn-taisp.cpp ./src/ndnSIM/examples/ndn-taisp/taisp-strategy.hpp ./src/ndnSIM/examples/ndn-taisp/taisp-strategy.cpp
+ emacs ./src/ndnSIM/examples/topologies/topology-taisp.txt ./src/ndnSIM/examples/ndn-taisp.cpp ./src/ndnSIM/examples/ndn-taisp/taisp-strategy.hpp ./src/ndnSIM/examples/ndn-taisp/taisp-strategy.cpp

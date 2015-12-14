@@ -20,6 +20,7 @@ main(int argc, char* argv[])
   CommandLine cmd;
   cmd.Parse(argc, argv);
 
+  std::cout << "main\n" << std::flush;
   AnnotatedTopologyReader topologyReader("", 25);
   topologyReader.SetFileName("src/ndnSIM/examples/topologies/topology-taisp.txt");
   topologyReader.Read();
@@ -33,23 +34,26 @@ main(int argc, char* argv[])
   ndnGlobalRoutingHelper.InstallAll();
 
   // consumers/producers
+  std::cout << "main1\n" << std::flush;
+
   Ptr<Node> producer1 = Names::Find<Node>("Server1");
   Ptr<Node> producer2 = Names::Find<Node>("Server2");
 
+  std::cout << "main2\n" << std::flush;
   NodeContainer consumerNodes;
-  Ptr<Node> consumer1 = Names::Find<Node>("YouTube");
-  Ptr<Node> consumer2 = Names::Find<Node>("VoIP");
+  Ptr<Node> consumer1 = Names::Find<Node>("YouTube1");
+  Ptr<Node> consumer2 = Names::Find<Node>("YouTube2");
   Ptr<Node> consumer3 = Names::Find<Node>("FTP");
-  Ptr<Node> consumer4 = Names::Find<Node>("Random");
   consumerNodes.Add(consumer1);
   consumerNodes.Add(consumer2);
   consumerNodes.Add(consumer3);
-  consumerNodes.Add(consumer4);
 
   // Install NDN applications
   std::string prefix = "/taisp/taisp-experiment";
 
   // Install taisp strategy in node AC
+  std::cout << "main3\n" << std::flush;
+
   Ptr<Node> theac = Names::Find<Node>("AC");
   StrategyChoiceHelper::Install<nfd::fw::TaispStrategy>(theac, prefix);
 
@@ -60,7 +64,7 @@ main(int argc, char* argv[])
 
   AppHelper producerHelper("ns3::ndn::Producer");
   producerHelper.SetPrefix(prefix);
-  producerHelper.SetAttribute("PayloadSize", StringValue("4096"));
+  producerHelper.SetAttribute("PayloadSize", StringValue("1024"));
   producerHelper.Install(producer1);
   producerHelper.Install(producer2);
 
@@ -68,11 +72,12 @@ main(int argc, char* argv[])
   ndnGlobalRoutingHelper.AddOrigins(prefix, producer1);
   ndnGlobalRoutingHelper.AddOrigins(prefix, producer2);
 
+  std::cout << "main5\n" << std::flush;
   // Calculate and install FIBs
   GlobalRoutingHelper::CalculateRoutes();
 
   Simulator::Stop(Seconds(90.0));
-
+  std::cout << "main6\n" << std::flush;
   Simulator::Run();
   Simulator::Destroy();
 
