@@ -1,4 +1,4 @@
 ns-3/build
-ns-3/.waf*
 ns-3/.lock*
+ns-3/.waf-1*
 *.pyc
